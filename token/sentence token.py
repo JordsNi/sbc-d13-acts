@@ -2,9 +2,10 @@
 special_char = ['@','_','!','#','$','%','^','&','*','(',')','<','>','?','/','\ ','|','{','}','~',':',']']
 sudlanan = []
 word = ""
-words = input("Enter a sentence: ").lower()
+words = input("Enter a sentence: ")
 for i in words:
     if i in special_char :
+        word += i
         sudlanan.append(word)
         word = ""
     elif i  == "'":
